@@ -93,9 +93,9 @@
  <!-- node -->
  <xs:element name="nodeImpl">
 	 <xs:complexType>
-	 	<xs:sequence>
-	 		<xs:element ref="ni:linkImpl" minOccurs="0" maxOccurs="unbounded"/>
-	 	</xs:sequence>
+		 <xs:sequence>
+		  	<xs:element ref="ni:linkImpl" minOccurs="0" maxOccurs="unbounded"/>
+		  </xs:sequence>
 	 	<xs:attribute name="node_name" type="ni:name" use="required"/>
         <xs:attribute name="host_name" type="ni:name" use="required"/>
         <xs:attribute name="functionaltypeId" type="ni:name" use="required"/>
@@ -167,7 +167,7 @@
 <!-- COLLECTIONS -->
 
 <!-- nffgs collection -->
-<xs:element name="NffgC">
+<xs:element name="nffgC">
 	<xs:complexType>
 		<xs:sequence>
             <xs:element ref="ni:nffgImpl" minOccurs="0" maxOccurs="unbounded"/>
@@ -176,7 +176,7 @@
 </xs:element>
 
 <!-- hosts collection -->
-<xs:element name="HostC">
+<xs:element name="hostC">
 	<xs:complexType>
 		<xs:sequence>
 	 		<xs:element ref="ni:hostImpl" minOccurs="1" maxOccurs="unbounded"/>
@@ -185,7 +185,7 @@
 </xs:element>
 
 <!-- nodes collection -->
-<xs:element name="NodesC">
+<xs:element name="nodesC">
 	<xs:complexType>
 		<xs:sequence>
             <xs:element ref="ni:nodeImpl" minOccurs="0" maxOccurs="unbounded" />
@@ -194,7 +194,7 @@
 </xs:element>
 
 <!-- links collection -->
-<xs:element name="LinkC">
+<xs:element name="linkC">
 	<xs:complexType>
 		<xs:sequence>
             <xs:element ref="ni:linkImpl" minOccurs="0" maxOccurs="unbounded"/>
@@ -203,7 +203,7 @@
 </xs:element>
 
 <!-- performances collection -->
-<xs:element name="PerformanceC">
+<xs:element name="performanceC">
 	<xs:complexType>
 		<xs:sequence>
             <xs:element ref="ni:performanceImpl" minOccurs="0" maxOccurs="unbounded"/>
